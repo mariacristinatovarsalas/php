@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <title>Inipop</title>
+  </head>
+
+  <body>
+
+    <!----------------------------------------------------------->
+    <!----------------------------CONTACT------------------------>
+    <!----------------------------------------------------------->
+
+      <!-- <div id="contact" class="video-agents-container">
+        <div class="video-container agents-video">
+          <video autoplay muted loop src="videos/lines.mp4">
+            Tu navegador no implementa el elemento <code>video</code>
+          </video>
+        </div>
+        <div class="contact-text p-5">
+          <div class="pb-5 pt-5 pl-2 pr-2">
+            <h1 class="text-white title">Contact Us</h1>
+            <form action="contact.php" method="post">
+              <div class="form-group">
+                <label for="exampleFormControlInput1" class="text-white">Your name</label>
+                <input type="email" class="form-control input" id="exampleFormControlInput1" name="visitor_name">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1" class="text-white">Your email</label>
+                <input type="email" class="form-control input" id="exampleFormControlInput1" name="visitor_email">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1" class="text-white">Subject</label>
+                <input type="email" class="form-control input" id="exampleFormControlInput1" name="subject">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1" class="text-white">Message</label>
+                <textarea class="form-control input" id="exampleFormControlTextarea1" rows="3" name="visitor_msg"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary pl-4 pr-4 mt-3">Enviar</button>
+            </form>
+          </div>
+          <div class="text-white text-left pl-4">
+            <div class="data-item mb-3">
+              <div>
+                <img src="img/phone.png" class="data-img">
+              </div>
+              <div class="data-text">+54 11 5368 0540</div>
+            </div>
+            <div class="data-item mb-3">
+              <div>
+                <img src="img/mail.png" class="data-img">
+              </div>
+              <div class="data-text">info@inipop.com</div>
+            </div>
+            <div class="data-item mb-3">
+              <div>
+                <img src="img/arg.png" class="data-img">
+              </div>
+              <div class="data-text">Roque Sáenz Peña 1144, San Isidro, Argentina</div>
+            </div>
+            <div class="data-item mb-3">
+              <div>
+                <img src="img/usa.png" class="data-img">
+              </div>
+              <div class="data-text">77 Water Street, 7th and 8th Floor New York, New York, 10005</div>
+            </div>
+          </div>
+        </div>
+        </div> -->
+
+
+
+        <form action="contact.php" method="post">
+          <div class="elem-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+          </div>
+          <div class="elem-group">
+            <label for="email">Your E-mail</label>
+            <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+          </div>
+          <div class="elem-group">
+            <label for="department-selection">Choose Concerned Department</label>
+            <select id="department-selection" name="concerned_department" required>
+                <option value="">Select a Department</option>
+                <option value="billing">Billing</option>
+                <option value="marketing">Marketing</option>
+                <option value="technical support">Technical Support</option>
+            </select>
+          </div>
+          <div class="elem-group">
+            <label for="title">Reason For Contacting Us</label>
+            <input type="text" id="title" name="email_title" required placeholder="Unable to Reset my Password" pattern=[A-Za-z0-9\s]{8,60}>
+          </div>
+          <div class="elem-group">
+            <label for="message">Write your message</label>
+            <textarea id="message" name="visitor_message" placeholder="Say whatever you want." required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      
+
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script type="text/javascript" src="js/slick.min.js"></script>
+  </body>
+</html>
